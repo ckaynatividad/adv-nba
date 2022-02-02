@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function CardDetail() {
-  console.log('yuck');
+export default function CardDetail(props) {
   return (
     <div className="detail">
-      <p>meow card detail meow</p>
+      <p>{props.englishName}</p>
     </div>
   );
 }

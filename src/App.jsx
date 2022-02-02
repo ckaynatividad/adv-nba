@@ -1,5 +1,6 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import CardDetail from './components/CardDetail';
+import Card from './views/Card';
 import Cards from './views/Cards';
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
           <Route path="/cards">
             <Cards />
           </Route>
-          <Route path="/:_id" component={CardDetail}>
-            <CardDetail />
+          <Route path="/:_id" component={Card}>
+            <Card />
           </Route>
         </Switch>
       </BrowserRouter>
