@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
-import CardDetail from '../components/CardDetail';
 import { getCardbyId } from '../services/cards';
 
 export default function Card() {
@@ -18,10 +17,13 @@ export default function Card() {
   console.log(card);
 
   return (
-    <div>
-      <h1>hi</h1>
-      <p>{card.englishName}</p>
+    <div className="detail">
+      <h1>{card.englishName}</h1>
       <img src={card.sakuraCard} />
+      <p>Card #{card.cardNumber}</p>
+      <p>Spanish Name: {card.spanishName}</p>
+      <p>Kanji: {card.kanji}</p>
+      <p>Meaning: {card.meaning}</p>
     </div>
   );
 }

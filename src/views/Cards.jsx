@@ -19,7 +19,7 @@ export default function Cards() {
 
   return (
     <div>
-      <h1>cards</h1>
+      <h1>Sakura CardCaptor Cards</h1>
       {loading && <h1>hold on...</h1>}
       {!loading && (
         <div className="cards">

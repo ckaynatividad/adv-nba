@@ -1,11 +1,10 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import CardDetail from './components/CardDetail';
 import Card from './views/Card';
 import Cards from './views/Cards';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ 'text-align': 'center' }}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -14,7 +13,7 @@ function App() {
           <Route path="/cards">
             <Cards />
           </Route>
-          <Route path="/:_id" component={Card}>
+          <Route path="/:_id">
             <Card />
           </Route>
         </Switch>
