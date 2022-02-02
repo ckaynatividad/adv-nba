@@ -16,7 +16,6 @@ export default function Card() {
     };
     fetchData();
   }, [params._id]);
-  console.log(card);
 
   return (
     <div className="detail">

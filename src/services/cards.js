@@ -3,7 +3,7 @@ export async function getCards() {
     'https://protected-taiga-89091.herokuapp.com/api/card'
   );
   const data = await resp.json();
-  console.log(data.data);
+
   return data.data;
 }
 
