@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { getCardbyId } from '../services/cards';
 
@@ -24,6 +26,10 @@ export default function Card() {
       <p>Spanish Name: {card.spanishName}</p>
       <p>Kanji: {card.kanji}</p>
       <p>Meaning: {card.meaning}</p>
+
+      <p>
+        <NavLink to="/">back</NavLink>
+      </p>
     </div>
   );
 }
