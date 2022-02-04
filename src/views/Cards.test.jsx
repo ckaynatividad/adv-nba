@@ -1,11 +1,13 @@
 import {
   render,
   screen,
+  waitFor,
   waitForElementToBeRemoved,
 } from '@testing-library/react';
-
-import { MemoryRouter } from 'react-router-dom';
+import userEvent from '@testing-library/user-event';
+import { MemoryRouter, Route } from 'react-router-dom';
 import Cards from './Cards';
+import { act } from 'react-dom/test-utils';
 
 test('render first item ', async () => {
   render(

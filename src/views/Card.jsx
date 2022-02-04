@@ -10,10 +10,7 @@ export default function Card() {
   console.log(params);
 
   useEffect(() => {
-    const fetchData = () => {
-      getCardbyId(params._id).then((data) => setCard(data));
-    };
-    fetchData();
+    getCardbyId(params._id).then((data) => setCard(data));
   }, [params._id]);
 
   return (
