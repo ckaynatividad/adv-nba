@@ -6,7 +6,7 @@ export default function CardsList({ cards }) {
     <div>
       {cards.map((card) => (
         <Link key={card._id} to={`/${card._id}`}>
-          <h4>{card.englishName}</h4>
+          <h4 id="title">{card.englishName}</h4>
         </Link>
       ))}
     </div>

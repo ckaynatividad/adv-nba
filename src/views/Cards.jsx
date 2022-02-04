@@ -12,9 +12,7 @@ export default function Cards() {
       setCards(data);
       setLoading(false);
     };
-    if (loading) {
-      fetchData();
-    }
+    fetchData();
   }, []);
 
   return (
